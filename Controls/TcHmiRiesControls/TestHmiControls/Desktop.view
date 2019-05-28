@@ -2,7 +2,11 @@
   <div id="ViewDesktopBeckhoffLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/Beckhoff_Logo.svg" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-width="194" data-tchmi-height="57">
 
   </div>
-<div id="Ries_Hmi_Controls_TcHmiSlideButton" data-tchmi-type="Ries.Hmi.Controls.TcHmiSlideButton" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-state="False" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="324" data-tchmi-width-unit="px">
+<div id="Ries_Hmi_Controls_TcHmiSlideButton" data-tchmi-type="Ries.Hmi.Controls.TcHmiSlideButton" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-state="False" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="287" data-tchmi-width-unit="px">
+
+</div>
+
+<div id="Ries_Hmi_Controls_TcHmiSlideButton_1" data-tchmi-type="Ries.Hmi.Controls.TcHmiSlideButton" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="98" data-tchmi-left-unit="px" data-tchmi-state="False" data-tchmi-top="145" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px">
 
 </div>
 

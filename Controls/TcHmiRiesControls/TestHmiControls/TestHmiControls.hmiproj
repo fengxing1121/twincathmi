@@ -21,7 +21,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <EnableTypeScript>true</EnableTypeScript>
     <Name>TestHmiControls</Name>
-    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10108</HmiCommunicationRouterPort>
     <HmiInitial>1.0.0.0</HmiInitial>
     <HmiRecent>1.0.0.0</HmiRecent>
     <TcHmi_Ries_Hmi_Controls_IncludedInSolution>True</TcHmi_Ries_Hmi_Controls_IncludedInSolution>
