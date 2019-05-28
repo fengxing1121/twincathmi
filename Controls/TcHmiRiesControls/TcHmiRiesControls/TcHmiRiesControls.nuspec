@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+	<id>Ries.Hmi.Controls</id>
+	<version>1.0.0</version>
+	<title>TcHmiRiesControls</title>
+	<authors>Christian Benjamin Ries</authors>
+	<owners>Christian Benjamin Ries</owners>
+	<licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+	<projectUrl>https://github.com/cbries/twincathmi</projectUrl>
+	<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<description>Bundle of TwinCAT HMI controls for general use.</description>
+	<releaseNotes>initial release</releaseNotes>
+	<copyright>Christian Benjamin Ries, et. al.</copyright>
+	<tags>Beckhoff TwinCAT HMI</tags>
+	<dependencies>
+	  <group targetFramework="native1.12-tchmi">
+      <dependency id="Beckhoff.TwinCAT.HMI.Framework" version="2.0.0-dev.25" />
+    </group>
+	</dependencies>
+  </metadata>
+  <files>
+	<file src="**\*" 
+	      target="runtimes\native1.12-tchmi\"
+	      exclude="**\*.nuspec;**\*.hmi*proj;**\~*;**\*.tmp;**\tmp*;**\*.user;**\tsconfig.json;**\*.log;**\*.bak;**\obj\**\*;packages.config;packages.xsd;.hmiframework\**\*" />
+  </files>
+</package>

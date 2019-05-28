@@ -1,0 +1,26 @@
+{
+    "ALARM": {
+        "name": "",
+        "domain": "",
+        "params": {},
+        "severity": 1,
+        "id": 0,
+        "timeRaised": "1970-01-01T00:00:00Z",
+        "timeCleared": "1970-01-01T00:00:00Z",
+        "timeConfirmed": "1970-01-01T00:00:00Z",
+        "confirmationState": 4
+    },
+    "SIMULATION": [
+        {
+            "SIM_BOOL": false,
+            "SIM_INT": 6,
+            "SIM_STRING": "test"
+        },
+        {
+            "SIM_BOOL": true,
+            "SIM_INT": 6,
+            "SIM_STRING": "test"
+        }
+    ],
+    "test": 0
+}
