@@ -2612,9 +2612,6 @@
         "/Beckhoff.TwinCAT.HMI.Functions": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\Packages\\Beckhoff.TwinCAT.HMI.Functions.2.0.0-dev.23\\runtimes\\native1.12-tchmi",
         "/Ries.Hmi.Controls": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\Packages\\Ries.Hmi.Controls.1.0.0\\runtimes\\native1.12-tchmi",
         "/bin": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\TestHmiControls\\bin\\",
-        "/bin/Beckhoff.TwinCAT.HMI.Controls": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\TestHmiControls\\bin\\Beckhoff.TwinCAT.HMI.Controls",
-        "/bin/Beckhoff.TwinCAT.HMI.Functions": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\TestHmiControls\\bin\\Beckhoff.TwinCAT.HMI.Functions",
-        "/bin/Ries.Hmi.Controls": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\TestHmiControls\\bin\\Ries.Hmi.Controls",
         "/bin/framework": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\TestHmiControls\\bin\\framework",
         "/framework": "C:\\git\\twincathmi\\Controls\\TcHmiRiesControls\\Packages\\Beckhoff.TwinCAT.HMI.Framework.2.0.0-dev.25\\runtimes\\native1.12-tchmi"
     }
