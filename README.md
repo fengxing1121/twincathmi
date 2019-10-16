@@ -8,5 +8,5 @@ For additional information please consult the official Beckhoff representation: 
 
 # Compatibility 
 
-The toolings, controls, etc. have a compatibility to the future release of TwinCAT HMI 1.12.
+The toolings, controls, etc. have a compatibility to the future release of TwinCAT HMI 1.12 and some of TwinCAT HMI 1.10.
 
