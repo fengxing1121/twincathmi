@@ -5,10 +5,6 @@
 			<OutputPath Condition="'$(OutputPath)' == ''">bin\</OutputPath>
 		</PropertyGroup>
 
-		<TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
-			<Output TaskParameter="Result" PropertyName="TaskResult"/>
-		</TcHmiMSBuild.Publish.TcHmiGenerator>
-
 		<TcHmiMSBuild.Publish.TcHmiPublish TaskAction="PublishFiles" ProjectDirectory="$(TcHmi_ProjectDirectory)" ProfilesFilename="$(TcHmi_ProfilesFilename)" ProfileName="$(TcHmi_ProfileName)" OutputPath="$(OutputPath)" SuppressTaskMessages="False">
 			<Output TaskParameter="Result" PropertyName="TaskResult" />
 		</TcHmiMSBuild.Publish.TcHmiPublish>
