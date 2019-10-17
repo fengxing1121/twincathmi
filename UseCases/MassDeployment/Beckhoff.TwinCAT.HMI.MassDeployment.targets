@@ -1,0 +1,27 @@
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<Target Name="PublishWithoutBuild">
+		<PropertyGroup>
+			<OutputPath Condition="'$(OutputPath)' == ''">bin\</OutputPath>
+		</PropertyGroup>
+
+		<TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
+			<Output TaskParameter="Result" PropertyName="TaskResult"/>
+		</TcHmiMSBuild.Publish.TcHmiGenerator>
+
+		<TcHmiMSBuild.Publish.TcHmiPublish TaskAction="PublishFiles" ProjectDirectory="$(TcHmi_ProjectDirectory)" ProfilesFilename="$(TcHmi_ProfilesFilename)" ProfileName="$(TcHmi_ProfileName)" OutputPath="$(OutputPath)" SuppressTaskMessages="False">
+			<Output TaskParameter="Result" PropertyName="TaskResult" />
+		</TcHmiMSBuild.Publish.TcHmiPublish>
+
+		<TcHmiMSBuild.Publish.TcHmiPublish TaskAction="PublishExtensions" ProfilesFilename="$(TcHmi_ProfilesFilename)" ProfileName="$(TcHmi_ProfileName)" LocalServer="$(TcHmi_LocalServer)" ExtensionInformation="@(TcHmiReference)">
+			<Output TaskParameter="Result" PropertyName="TaskResult"/>
+		</TcHmiMSBuild.Publish.TcHmiPublish>
+
+		<TcHmiMSBuild.Publish.TcHmiPublish TaskAction="PublishConfiguration" ProjectDirectory="$(TcHmi_ProjectDirectory)" ProfilesFilename="$(TcHmi_ProfilesFilename)" ProfileName="$(TcHmi_ProfileName)" LocalServer="$(TcHmi_LocalServer)" ProjectFiles="@(Folder);@(Content)" ExtensionInformation="@(TcHmiReference)">
+			<Output TaskParameter="Result" PropertyName="TaskResult"/>
+		</TcHmiMSBuild.Publish.TcHmiPublish>
+
+		<OnError ExecuteTargets="PublishError"/>
+	</Target>
+
+</Project>
