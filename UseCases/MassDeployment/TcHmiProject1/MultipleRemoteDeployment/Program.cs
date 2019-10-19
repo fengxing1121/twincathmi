@@ -130,7 +130,7 @@ namespace MultipleRemoteDeployment
         {
             public TargetLogger()
             {
-                Verbosity = LoggerVerbosity.Detailed;
+                Verbosity = LoggerVerbosity.Minimal;
                 ShowSummary = true;
                 SkipProjectStartedText = false;
             }
