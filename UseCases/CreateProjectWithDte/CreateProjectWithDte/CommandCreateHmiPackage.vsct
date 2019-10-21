@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidCommandCreateHmiPackage">
+    <Groups>
+      <Group guid="guidCommandCreateHmiPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CSCD_NEW"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidCommandCreateHmiPackageCmdSet" id="CommandCreateHmiId" priority="0x0100" type="Button">
+        <Parent guid="guidCommandCreateHmiPackageCmdSet" id="MyMenuGroup" />
+        <Strings>
+          <ButtonText>Create HMI Project</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidCommandCreateHmiPackage" value="{1f475c27-0715-432b-902f-94cf629c9103}" />
+    <GuidSymbol name="guidCommandCreateHmiPackageCmdSet" value="{d6e70a2d-a8d9-4445-b89d-a045ae54a5df}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="CommandCreateHmiId" value="0x0100" />
+    </GuidSymbol>
+   
+  </Symbols>
+</CommandTable>
