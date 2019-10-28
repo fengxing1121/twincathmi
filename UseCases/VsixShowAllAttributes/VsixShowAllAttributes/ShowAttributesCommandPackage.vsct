@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidShowAttributesCommandPackage">
+    <Groups>
+      <Group guid="guidShowAttributesCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidShowAttributesCommandPackageCmdSet" id="ShowAttributesCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidShowAttributesCommandPackageCmdSet" id="MyMenuGroup" />
+        <Strings>
+          <ButtonText>Invoke ShowAttributesCommand</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidShowAttributesCommandPackage" value="{35774ff6-940b-41c7-b9db-755037564f93}" />
+    <GuidSymbol name="guidShowAttributesCommandPackageCmdSet" value="{761179d0-b0a0-4265-9ef0-17430a473096}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="ShowAttributesCommandId" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
